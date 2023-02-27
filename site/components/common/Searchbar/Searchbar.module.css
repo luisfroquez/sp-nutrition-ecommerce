@@ -1,17 +1,17 @@
 .root {
-  @apply relative text-sm bg-accent-0 text-base w-full transition-colors duration-150 border border-accent-2;
+  @apply relative text-sm text-white w-full  max-w-sm  transition-colors duration-150 border border-gray-500 rounded-md;
 }
 
 .input {
-  @apply bg-transparent px-3 py-2 appearance-none w-full transition duration-150 ease-in-out pr-10;
+  @apply bg-transparent px-3 py-2 appearance-none w-full max-w-sm transition duration-150 ease-in-out pr-10;
 }
 
 .input::placeholder {
-  @apply text-accent-3;
+  @apply text-gray-500;
 }
 
 .input:focus {
-  @apply outline-none shadow-outline-normal;
+  @apply outline-none;
 }
 
 .iconContainer {
@@ -21,9 +21,9 @@
 .icon {
   @apply h-5 w-5;
 }
-
+/* 
 @screen sm {
   .input {
-    min-width: 300px;
+    min-width: 100px;
   }
-}
+} */

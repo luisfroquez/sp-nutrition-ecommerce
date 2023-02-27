@@ -1,7 +1,7 @@
 import cn from 'clsx'
 import Link from 'next/link'
 import s from './UserNav.module.css'
-import { Avatar } from '@components/common'
+import { Avatar, Searchbar } from '@components/common'
 import useCart from '@framework/cart/use-cart'
 import { useUI } from '@components/ui/context'
 import { Heart, Bag, Menu } from '@components/icons'
@@ -52,6 +52,7 @@ const UserNav: React.FC<{
             </Button>
           </li>
         )}
+
         {process.env.COMMERCE_WISHLIST_ENABLED && (
           <li className={s.item}>
             <Link href="/wishlist">
@@ -61,6 +62,7 @@ const UserNav: React.FC<{
             </Link>
           </li>
         )}
+
         {process.env.COMMERCE_CUSTOMERAUTH_ENABLED && (
           <li className={s.item}>
             <Dropdown>
@@ -77,6 +79,13 @@ const UserNav: React.FC<{
             </Dropdown>
           </li>
         )}
+
+        {process.env.COMMERCE_SEARCH_ENABLED && (
+          <div className="justify-center hidden lg:flex">
+            <Searchbar />
+          </div>
+        )}
+        
         <li className={s.mobileMenu}>
           <Button
             className={s.item}

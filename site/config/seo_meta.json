@@ -1,19 +1,19 @@
 {
-  "title": "ACME Storefront | Powered by Next.js Commerce",
-  "titleTemplate": "%s - ACME Storefront",
-  "description": "Next.js Commerce - https://www.nextjs.org/commerce",
+  "title": "SP Nutrition",
+  "titleTemplate": "%s - SP Nutrition",
+  "description": "The best supplements",
   "openGraph": {
-    "title": "ACME Storefront | Powered by Next.js Commerce",
-    "description": "Next.js Commerce - https://www.nextjs.org/commerce",
+    "title": "SP Nutrition",
+    "description": "The best supplements",
     "type": "website",
     "url": "https://nextjs.org/commerce",
-    "site_name": "Next.js Commerce",
+    "site_name": "SP Nutrition",
     "images": [
       {
         "url": "/card.png",
         "width": "800",
         "height": "600",
-        "alt": "Next.js Commerce"
+        "alt": "SP Nutrition store"
       }
     ]
   },

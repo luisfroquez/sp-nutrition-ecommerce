@@ -18,6 +18,12 @@ import type { Page } from '@commerce/types/page'
 import type { Category } from '@commerce/types/site'
 import type { Link as LinkProps } from '../UserNav/MenuSidebarView'
 
+// pages/_app.js
+import { Inter } from '@next/font/google'
+
+// If loading a variable font, you don't need to specify the font weight
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
+
 const Loading = () => (
   <div className="w-80 h-80 flex items-center text-center justify-center p-3">
     <LoadingDots />
@@ -116,10 +122,10 @@ const Layout: React.FC<Props> = ({
 
   return (
     <CommerceProvider locale={locale}>
-      <div className={cn(s.root)}>
+      <div className={cn(`${inter.variable} font-sans`,s.root)}>
         <Navbar links={navBarlinks} />
-        <main className="fit">{children}</main>
-        <Footer pages={pageProps.pages} />
+        <main className={`${inter.variable} font-sans fit`}>{children}</main>
+        {/* <Footer pages={pageProps.pages} /> */}
         <ModalUI />
         <CheckoutProvider>
           <SidebarUI links={navBarlinks} />

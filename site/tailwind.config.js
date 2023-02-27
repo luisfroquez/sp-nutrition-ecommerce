@@ -6,6 +6,9 @@ module.exports = {
   safelist: ['outline-none'],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['var(--font-inter)'],
+      },
       maxWidth: {
         '8xl': '1920px',
       },
@@ -35,7 +38,32 @@ module.exports = {
         cyan: 'var(--cyan)',
         blue: 'var(--blue)',
         green: 'var(--green)',
-        red: 'var(--red)',
+        red: {
+          DEFAULT: '#F8192C',
+          50: '#FDCBCF',
+          100: '#FDB7BD',
+          200: '#FC9099',
+          300: '#FA6875',
+          400: '#F94150',
+          500: '#F8192C',
+          600: '#D20618',
+          700: '#9C0512',
+          800: '#66030B',
+          900: '#2F0105',
+        },
+        gray: {
+          DEFAULT: '#161719',
+          50: '#EFF0F1',
+          100: '#E2E3E5',
+          200: '#C7C9CD',
+          300: '#ABAFB6',
+          400: '#90959E',
+          500: '#757B86',
+          600: '#5E626A',
+          700: '#46494F',
+          800: '#2E3034',
+          900: '#161719',
+        },
       },
       textColor: {
         base: 'var(--text-base)',
